@@ -1,0 +1,39 @@
+@use "vars";
+@use "typography";
+
+.title-f{
+    @include typography.set-font(vars.$ff-libre, vars.$fw-reg, vars.$fs-big);
+}
+
+.card-d-f{
+    @include typography.set-font(vars.$ff-lato, vars.$fw-reg, vars.$fs-base);
+}
+
+.nav-1{
+    background-color: #770707e0;
+}
+
+.border_bottom { 
+    position: static;
+    margin-top: 4rem;
+    border-bottom: 1.5px solid rgb(22, 22, 22); 
+}
+
+.border_bottom1 { 
+    position: static;
+    margin-top: 2rem;
+    border-bottom: 1.5px solid rgb(252, 252, 252); 
+}
+
+ .cards-btn-color{
+     color: #3A4F70;
+ }
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+$newcolor: #3A4F70;
+.btn-primary{
+    @include button-variant($newcolor, #3A4F70);
+}
+
+// @include vars.set-font(typography.$ff-libre, typography.$fw-light, typography.$fs-big);

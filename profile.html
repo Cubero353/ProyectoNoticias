@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--FontAwesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>profile</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <!-- Nav -->
+        <div class="row">
+            <nav class="nav-1  navbar navbar-expand-lg navbar-light">
+                <div class="m-4 container-fluid">
+                    <a class="title-f navbar-brand text-white" href="#">EL ESPARTANO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="  nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Nav -->
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="mb-3 pt-5">
+                            <label for="exampleInputEmail1" class="form-label">Nombre de la cuenta</label>
+                            <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Recuperar contraseña</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <img class="h-50" src="./imgs/02.jfif" alt=".">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center text-white" style="background-color: #801414">
+        <ul class="nav justify-content-center pt-4">
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Desarrolladores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Terminos de servicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Soporte</a>
+            </li>
+        </ul>
+
+        <div class="container border_bottom1"></div>
+
+        <div class="pt-4">
+            <section class="  mb-2">
+                <!-- Facebook -->
+                <i class="me-4 ms-4 fab fa-facebook fa-xl"></i>
+                <!-- Instagram -->
+                <i class="ms-4 me-4 fab fa-instagram"></i>
+                <!-- Github -->
+                <i class="ms-4 me-4 fab fa-github"></i>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-dark pt-3 pb-4"> 
+            <a class="nav-link text-white" href="#">© 2020 Copyright:</a>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+
+</body>
+</html>
