@@ -1,5 +1,6 @@
 @use "vars";
 @use "typography";
+@use "catcards";
 
 .title-f{
     @include typography.set-font(vars.$ff-libre, vars.$fw-reg, vars.$fs-big);
@@ -29,11 +30,20 @@
      color: #3A4F70;
  }
 
+ .w-65{
+     width: 65%;
+ }
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 $newcolor: #3A4F70;
 .btn-primary{
     @include button-variant($newcolor, #3A4F70);
+}
+
+$newcolortwo: #00000095;
+.btn-outline-primary{
+    @include button-variant($newcolortwo, #00000095);
 }
 
 // @include vars.set-font(typography.$ff-libre, typography.$fw-light, typography.$fs-big);
