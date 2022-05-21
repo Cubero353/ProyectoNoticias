@@ -1,39 +1,72 @@
 @use "vars";
 @use "typography";
+@use "reset";
+@use "cards-dt";
+@use "dtprofile";
 
 .title-f{
     @include typography.set-font(vars.$ff-libre, vars.$fw-reg, vars.$fs-big);
-}
-
-.card-d-f{
-    @include typography.set-font(vars.$ff-lato, vars.$fw-reg, vars.$fs-base);
 }
 
 .nav-1{
     background-color: #770707e0;
 }
 
-.border_bottom { 
+.nav-f{
+    @include typography.set-font(vars.$ff-lato, vars.$fw-reg, vars.$fs-base);
+}
+
+.nab-f-2{
+    @include typography.set-font(vars.$ff-lato, vars.$fw-bold, vars.$fs-sm);
+}
+
+.line-hero { 
     position: static;
     margin-top: 4rem;
     border-bottom: 1.5px solid rgb(22, 22, 22); 
 }
 
-.border_bottom1 { 
+.line-footer { 
     position: static;
     margin-top: 2rem;
     border-bottom: 1.5px solid rgb(252, 252, 252); 
 }
 
- .cards-btn-color{
-     color: #3A4F70;
- }
+.w-65{
+    width: 65%;
+}
 
+.carousel{
+    height: 431px;
+    width: 665px;
+}
+
+@media (max-width: 576px){
+    .carousel{
+        height: 231px;
+        width: 325px;
+        font-size: 10px
+    }
+}
+
+.list-off{
+    list-style: none;
+}
+
+
+// Import de bootstrap
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// clases para modificar la de por defecto de bootstrap
 
 $newcolor: #3A4F70;
 .btn-primary{
     @include button-variant($newcolor, #3A4F70);
 }
 
-// @include vars.set-font(typography.$ff-libre, typography.$fw-light, typography.$fs-big);
+$newcolortwo: #00000095;
+.btn-outline-primary{
+    @include button-variant($newcolortwo, #00000095);
+}
+
+

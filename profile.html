@@ -23,32 +23,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-    <title>profile</title>
+    <title>Profile</title>
 </head>
 <body>
-    
     <div class="container-fluid">
+
         <!-- Nav -->
         <div class="row">
             <nav class="nav-1  navbar navbar-expand-lg navbar-light">
                 <div class="m-4 container-fluid">
-                    <a class="title-f navbar-brand text-white" href="#">EL ESPARTANO</a>
+                    <a class="title-f navbar-brand text-white" href="index.html">EL ESPARTANO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Contacto</a>
+                                <a class="nav-link active text-white nav-f" aria-current="page" href="#">Contacto</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button class="btn btn-outline-light" type="submit">Search</button>
-                        </form>
                         <ul class="navbar-nav mb-lg-0">
                             <li class="  nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Login</a>
+                                <a class="nav-link active text-white nav-f" aria-current="page" href="index.html">Cerrar Sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -56,49 +52,194 @@
             </nav>
         </div>
         <!-- Nav -->
-        <main class="container">
+
+        <main class="container pb-5 border-bottom">
             <div class="row">
                 <div class="col">
                     <form>
                         <div class="mb-3 pt-5">
-                            <label for="exampleInputEmail1" class="form-label">Nombre de la cuenta</label>
-                            <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp">
+                            <fieldset disabled>
+                            <label for="disabledTextInput" class="form-label nav-f">Nombre de la Cuenta</label>
+                            <input type="text" class="form-control" id="disabledTextInput"  placeholder="Ejemplo: Mauricio Rojas">
+                        </fieldset>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1" class="form-label nav-f" >Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"  placeholder=". . . . . . . . . ">
                         </div>
-                        <button type="submit" class="btn btn-primary">Recuperar contraseña</button>
+                        <button type="submit" class="btn-card-f">Recuperar Contraseña</button>
                     </form>
                 </div>
-                <div class="col">
-                    <img class="h-50" src="./imgs/02.jfif" alt=".">
+                <div class="col d-flex align-items-start justify-content-center">
+                    <img class="w-65 mt-5 border" src="./imgs/1468621304_870578_1468621692_noticia_normal.jpg" alt=".">
                 </div>
             </div>
         </main>
-    </div>
 
+        <!-- Categories Title -->
+        <div class="row">
+            <div class="col">
+                <div class="container pt-3">
+                    <h5 class="nab-f-2 navbar text-dark">Tus Categorías</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Menu-->
+        <div class="container">
+            <div class="pt-3 row row-cols-1 row-cols-md-3 g-4">
+                <div>
+                    <button class="btn-outline-primary card shadow category-card img-dep" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Deporte</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas al mundo del fútbol y otros deportes.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn-outline-primary card shadow category-card img-sal" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Salud</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas a la salud y la medicina.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div>
+                    <button class="btn-outline-primary card shadow category-card img-tec" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Tecnología</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas a novedades teconológicas.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn-outline-primary card shadow category-card img-ent" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Entretenimiento</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas al cine, la televisión y la música.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Title -->
+        <div class="row">
+            <div class="col">
+                <div class="container pt-4">
+                    <h5 class="nab-f-2 navbar text-dark">Otras</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="pt-3 row row-cols-1 row-cols-md-3 g-4">
+                <div>
+                    <button class="btn-outline-secondary card shadow category-card img-fin" data-bs-toggle="button" aria-pressed="off">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Finanzas</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas a movimientos de moneda y la bolsa.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn-outline-secondary card shadow category-card img-pol" data-bs-toggle="button" aria-pressed="off">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Política</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas al gobierno y movimientos políticos.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn-outline-secondary card shadow category-card img-via" data-bs-toggle="button" aria-pressed="off">
+                        <div class="card-body text-white">
+                            <h5 class="card-title nab-f-2">Viajes</h5>
+                            <p class="card-text card-d-f">
+                                Noticias relacionadas al turismo y el extranjero.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Title -->
+        <div class="row">
+            <div class="col">
+                <div class="container pt-4">
+                    <h5 class="nab-f-2 navbar text-dark">Noticias Recientes</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="pt-3 pb-5 row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 w-100 shadow">
+                        <img src="./imgs/01.jfif" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-t-f card-title">Card title</h5>
+                            <p class="card-d-f card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bitlonger.</p>
+                        </div>                  
+                        <div class="ps-3">
+                            <a href="#" class="btn-card-f" data-bs-target="#exampleModal" data-bs-toggle="modal">Mas información</a>
+                            <i class="position-absolute end-0 pe-4 pt-2 far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 w-100 shadow">
+                    <img src="./imgs/01.jfif" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-t-f card-title">Card title</h5>
+                            <p class="card-d-f card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi reprehenderit architecto odio libero soluta laudantium, laborum, voluptas delectus maiores tempora praesentium eos quaerat non nam blanditiis minima.
+                            </p>                       
+                        </div>
+                        <div class="ps-3">
+                            <a href="#" class="btn-card-f">Mas información</a>
+                            <i class="position-absolute end-0 pe-4 pt-2 far fa-heart"></i>
+                        </div>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- footer -->
-    <footer class="text-center text-white" style="background-color: #801414">
+    <footer class="text-center text-white w-100 mt-5" style="background-color: #801414">
         <ul class="nav justify-content-center pt-4">
             <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Sobre Nosotros</a>
+                <a class="card-d-f nav-link active text-white" aria-current="page" href="#">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Trabajos</a>
+                <a class="card-d-f nav-link text-white" href="#">Trabajos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Desarrolladores</a>
+                <a class="card-d-f nav-link text-white" href="#">Desarrolladores</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Terminos de servicio</a>
+                <a class="card-d-f nav-link text-white" href="#">Terminos de servicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Soporte</a>
+                <a class="card-d-f nav-link text-white" href="#">Soporte</a>
             </li>
         </ul>
 
-        <div class="container border_bottom1"></div>
+        <div class="container line-footer"></div>
 
         <div class="pt-4">
             <section class="  mb-2">
@@ -113,7 +254,7 @@
 
         <!-- Copyright -->
         <div class="text-center text-dark pt-3 pb-4"> 
-            <a class="nav-link text-white" href="#">© 2020 Copyright:</a>
+            <a class="card-d-f nav-link text-white" href="#">© 2020 Copyright:</a>
         </div>
     </footer>
 
