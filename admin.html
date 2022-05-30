@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fin del Link css -->
+
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <!-- Fin del FontAwesome  -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Fin de Google Fonts -->
+
+    <title>Admin</title>
+</head>
+
+
+<body>
+
+    <!-- Nav -->
+    <div class="row">
+
+        <nav class="nav-1  navbar navbar-expand-lg navbar-light">
+
+            <div class="m-4 container-fluid">
+
+                <a class="title-f navbar-brand text-white" href="index.html">EL ESPARTANO</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-lg-0">
+                        
+                        <li class="  nav-item">
+                            
+                            <a class="nav-link active text-white nav-f" aria-current="page" href="index.html">Cerrar Sesión</a>
+                        
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <!-- Fin del Nav -->
+
+    <!-- Ingreso de administrador al sistema -->
+    
+        <main class="container pb-5 border-bottom">
+            
+            <div class="row">
+
+                <div class="col">
+
+                    <form>
+                        <div class="mb-3 pt-5">
+
+                            <fieldset disabled>
+                                <label for="disabledTextInput" class="form-label nav-f">Nombre de la Cuenta</label>
+                                <input type="text" class="form-control" id="disabledTextInput"  placeholder="Ejemplo: Mauricio Rojas">
+                            </fieldset>
+                        
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="exampleInputPassword1" class="form-label nav-f" >Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"  placeholder=". . . . . . . . . ">
+                        
+                        </div>
+
+                            <button type="submit" class="btn-card-f">Recuperar Contraseña</button>
+
+                    </form>
+                    
+                </div>
+
+                    <div class="col d-flex align-items-start justify-content-center">
+                    <img class="w-65 mt-5 border" src="./imgs/1468621304_870578_1468621692_noticia_normal.jpg" alt=".">
+                
+                </div>
+        
+            </div>
+        
+        </main>
+    <!-- Fin del Ingreso de administrador al sistema -->
+
+    <!-- Lista de Noticias -->
+    <div class="row">
+
+        <div class="col">
+
+            <div class="container pt-3">
+                <h5 class="nab-f-2 navbar text-dark">Lista de Noticias</h5>
+            </div>
+
+        </div>
+    
+    </div>
+    <!-- Fin de la Lista de Noticias -->
+
+    <!-- Categories de la Lista -->
+    <div class="container">
+        <div class="pt-3 row row-cols-1 row-cols-md-3 g-4">
+
+            <div>
+
+                <button class="btn-outline-primary card shadow category-card img-dep" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                    
+                    <div class="card-body text-white">
+                        
+                        <h5 class="card-title nab-f-2">Deporte</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas al mundo del fútbol y otros deportes.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div>
+
+                <button class="btn-outline-primary card shadow category-card img-ent" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                    
+                    <div class="card-body text-white">
+                        
+                        <h5 class="card-title nab-f-2">Entretenimiento</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas al cine, la televisión y la música.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div>
+
+                <button class="btn-outline-secondary card shadow category-card img-fin" data-bs-toggle="button" aria-pressed="off">
+                    
+                    <div class="card-body text-white">
+                        
+                        <h5 class="card-title nab-f-2">Finanzas</h5>
+                        <p class="card-text card-d-f">
+                            Noticias en relación a movimientos de moneda y la bolsa.
+                        </p>
+
+                    </div>
+                
+                </button>
+            
+            </div>
+
+            <div>
+
+                <button class="btn-outline-secondary card shadow category-card img-pol" data-bs-toggle="button" aria-pressed="off">
+                    
+                    <div class="card-body text-white">
+                        
+                        <h5 class="card-title nab-f-2">Política</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas al gobierno y movimientos políticos.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div>
+
+                <button class="btn-outline-primary card shadow category-card img-sal" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                    
+                    <div class="card-body text-white">
+                        
+                        <h5 class="card-title nab-f-2">Salud</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas a la salud y la medicina.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div>
+
+                <button class="btn-outline-primary card shadow category-card img-tec" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                    
+                    <div class="card-body text-white">
+
+                        <h5 class="card-title nab-f-2">Tecnología</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas a novedades teconológicas.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+            
+            <div>
+
+                <button class="btn-outline-secondary card shadow category-card img-via" data-bs-toggle="button" aria-pressed="off">
+                    
+                    <div class="card-body text-white">
+
+                        <h5 class="card-title nab-f-2">Viajes</h5>
+                        <p class="card-text card-d-f">
+                            Noticias relacionadas al turismo y el extranjero.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+        
+
+        </div>
+
+    </div>
+    <!-- Fin de las Categories de la Lista -->
+
+
+    <!-- Crear una nueva noticia -->
+    <div class="row">
+
+        <div class="col">
+
+            <div class="container pt-3">
+                <h5 class="nab-f-2 navbar text-dark">Crear una Noticia</h5>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="container">
+
+        <div class="row justify-content-center row-cols-1 row-cols-md-3">
+
+            <ul class="navbar-nav mb-lg-0 pt-3">
+                <li>
+                    <a class="text-white btn-card-f" aria-current="page" href="#" data-bs-target="#modalCrearNoticia" data-bs-toggle="modal"> Crear Noticia</a>
+                </li>
+            </ul> 
+
+        </div>
+
+    </div> 
+
+    
+    <!-- Fin de Crear una nueva noticia -->
+
+    <!-- Modal Crear Noticia -->
+
+    <div class="modal fade" id="modalCrearNoticia" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+        
+        <div class="modal-dialog ">
+            
+            <div class="modal-content ">
+                
+                <div class="modal-header">
+
+                    <h5 class="modal-title nab-f-2" id="exampleModalLabel"> Crear nueva noticia </h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+
+                        <!-- Título -->
+                        <div class="form-outline mb-4">
+
+                            <label class="form-label nav-f" for="exampleTitle1"> Título</label>
+
+                            <input type="text" id="exampleTitle1" class="form-control" />
+
+                        </div>
+                        <!-- Fin del Título -->
+
+                        <!-- Description -->
+                        <div class="form-outline mb-4">
+
+                            <label class="form-label nav-f" for="exampleDescription1"> Descripción</label>
+
+                            <input type="text" id="exampleDescription1" class="form-control" />
+
+                        </div>
+                        <!-- Fin de la Description -->
+                    
+                        <!-- Image -->
+                        <div class="form-outline mb-4">
+
+                            <label class="form-label nav-f" for="exampleImage1"> Agregue una imagen</label>
+
+                            <input type="image" id="exampleImage1" class="form-control" />
+
+                        </div>
+                        <!-- Fin de Image -->  
+                        
+                        <button type="submit" class="btn btn-primary btn-block" data-bs-dismiss="modal">Cerrar</button>                
+                        
+                        <button type="submit" class="btn btn-primary btn-block"> Subir Noticia </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Fin del Modal Crear Noticias -->
+
+
+    <!-- Footer Admin -->
+    <footer class="text-center text-white w-100 mt-5" style="background-color: #801414">
+        <ul class="nav justify-content-center pt-4">
+
+            <li class="nav-item">
+                <a class="card-d-f nav-link text-white" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item">
+                <a class="card-d-f nav-link text-white" href="#">Desarrolladores</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="card-d-f nav-link text-white" href="#">Soporte</a>
+            </li>
+        </ul>
+
+        <!-- Copyright -->
+        <div class="text-center text-dark pt-3 pb-4"> 
+            <a class="card-d-f nav-link text-white" href="#">© 2020 Copyright:</a>
+        </div>
+    </footer>
+     <!-- Fin del Footer Admin -->
+
+    <!-- Script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+    <!-- Fin del Script -->
+
+    
+</body>
+</html>
