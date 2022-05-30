@@ -1,6 +1,5 @@
 @use "vars";
 @use "typography";
-@use "reset";
 @use "cards-dt";
 @use "dtprofile";
 
@@ -55,7 +54,7 @@
 
 
 // Import de bootstrap
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // clases para modificar la de por defecto de bootstrap
 

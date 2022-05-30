@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- VueJS -->
+    <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+    <!-- VueJS -->
+
+    <!--FontAwesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+        <div class="container-fluid">
+            <!-- Nav -->
+            <div class="row">
+                <nav class="nav-1 navbar navbar-expand-lg navbar-light " >
+                    <div class="m-4 container-fluid">
+                        <a class="title-f navbar-brand text-white" href="#">EL ESPARTANO</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white nav-f" aria-current="page" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                <span class="input-group-text border-0" id="search-addon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </form>
+                            <ul class="navbar-nav mb-lg-0 pt-3">
+                                <li class=" nav-item">
+                                    <a class="nav-link text-white nav-f " aria-current="page" data-bs-target="#modalInicioSesion" data-bs-toggle="modal">Iniciar Sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white btn-card-f" aria-current="page" data-bs-target="#modalCheckIn" data-bs-toggle="modal">Registrase</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Nav -->
+
+            <!-- Hero -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <news-carousel></news-carousel>
+                    </div>
+                </div>
+
+                <!-- Line -->
+                <div class="line-hero"></div>
+                
+                <!-- Nav 2 -->
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar">
+                            <div class=" container-fluid pt-5">
+                                <h1 class="text-dark nab-f-2">Categorias</h1>
+                                <news-category-nav v-for="(item) in categories" :name="item.name" @clicknewscategory="showNewsInCategory"></news-category-nav>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Nav 2 -->
+
+                <!-- cards -->
+                <div class="pt-5 pb-5 row row-cols-1 row-cols-md-3 g-4">
+                    <news-card v-for="(item, index) in news" :title="item.title" :subtitle="item.subtitle" :image="item.image" :index="index" @clicknewsdetail="showNewsDetails"></news-card>
+                </div>
+                <!-- cards -->
+
+                <!-- modal - news details -->
+                    <news-details :title="news[selectedItem].title" :category="news[selectedItem].category" :image="news[selectedItem].image" :date="news[selectedItem].date" :description="news[selectedItem].description"></news-details>
+                <!-- modal - news details -->
+
+                <!-- Modal inicio sesion -->
+                    <login-modal></login-modal>
+                <!-- Modal inicio sesion -->
+
+                <!-- Modal-registrarse -->
+                    <check-in-modal></check-in-modal>
+                <!-- Modal-registrarse -->
+            </div>
+        </div>
+
+        <!-- footer -->
+        <news-footer></news-footer>
+        <!-- footer -->
+    </div>
+
+    <!-- script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script src="./components/NewsCard.js"></script>
+    <script src="./components/NewsDetails.js"></script>
+    <script src="./components/NewsCategoryNav.js"></script>
+    <script src="./components/LoginModal.js"></script>
+    <script src="./components/CheckInModal.js"></script>
+    <script src="./components/NewsFooter.js"></script>
+    <script src="./components/NewsCarousel.js"></script>
+    <script src="./components/NewsProfile.js"></script>
+
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
+    <!-- script -->
+
+  </body>
+</html>
